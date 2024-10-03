@@ -1,0 +1,146 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li, form, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:safe start;
+    align-items: center;
+    background: url(pair-shopping-cart-miniatures.jpg) ;
+	background-size: cover;
+	height: 150vh;
+}
+
+.navbar{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);
+}
+
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+}
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+.navbar ul li a{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: #e7e4e4;
+	padding: 6px 13px;
+	text-decoration: none;
+	transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: rgb(91, 89, 89);
+	border-radius: 2px;
+}
+
+
+.btn-with-image img {
+    width: 37px; /* Adjust the width to your desired size */
+    height: auto; /* Maintain aspect ratio */
+}
+.btn-with-image {
+    position: relative;
+    display: inline-block;
+  }
+
+
+.centered-list {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.centered-list li {
+    list-style: none;
+    font-size: 18px;
+    color: white;
+}
+
+.form {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgb(125, 183, 219);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ac4049;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.form .btn:hover {
+    background-color: #346ca8;
+}
+
+
+
+#resultContainer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: -20px; /* Adjust the value as needed */
+    z-index: 1;
+  }
+
+
+  #resultContainer h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  #resultContainer {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  #resultContainer th,
+  #resultContainer td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  #resultContainer th {
+    background-color:transparent;
+    font-weight: bold;
+  }

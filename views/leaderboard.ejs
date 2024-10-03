@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Page</title>
+  <!-- Include your CSS and other libraries here -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link href="stylehome.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="styleadmin.css">
+  <link rel="stylesheet" href="leaderboard.css">
+
+  
+  
+  <!-- jQuery libraries -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/admin_ajax_req.js"></script>
+  
+ 
+ 
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="navbar">
+      <!-- Your navigation content here -->
+      <nav class="navbar">
+        <!--	<img class="logo" src="logo.png">
+          <img src="bg1.jpg">
+            <h1>Hello, <%= name %></h1> -->
+            <a class='hello' style="color:#e7e4e4;"> 		Welcome , <%= name %> </a>
+          <ul>
+            <li><a  href="/">Home</a></li>
+            <li><a  href="/charts">Charts</a></li>
+            <li><a  href="/upload">Upload</a></li>
+            <li><a  class="active" href="/leaderboard">LeaderBoard</a></li>
+
+            <li><a href="/logout" class="btn btn-danger">Logout</a></li>
+          <!--	<li><a href="#">Log Out</a></li>  -->
+          </ul>
+        </nav>
+    
+    </nav>
+
+    
+    
+
+    <div class="center">
+
+         <div id="leaderboard-container">
+        <!-- Leaderboard content will be inserted here -->
+        </div>
+  </div>
+    
+
+      
+      </div>
+     
+
+
+
+</body>
+</html>

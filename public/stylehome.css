@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+}
+
+#mapid {
+
+		margin-top: 85px;
+		height: 450px;
+		width:100%;
+}
+
+.hello{
+	font-size:30px;
+	font-family: 'Roboto', sans-serif;
+	padding: 20px 20px;
+	float: left;
+	color: #e7e4e4;
+
+}
+
+.wrapper{
+	background: url(pair-shopping-cart-miniatures.jpg) ;
+	background-size: cover;
+	height: 150vh;
+}
+.navbar{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);
+}
+
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+}
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+.navbar ul li a{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: #e7e4e4;
+	padding: 6px 13px;
+	text-decoration: none;
+	transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: rgb(91, 89, 89);
+	border-radius: 2px;
+}
+.wrapper .center{
+	position: absolute;
+	left: 50%;
+	top: 44%;
+	transform: translate(-50%, -50%);
+	font-family: sans-serif;
+	user-select: none;
+  height: 500px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.btn-with-image img {
+    width: 37px; /* Adjust the width to your desired size */
+    height: auto; /* Maintain aspect ratio */
+}
+.btn-with-image {
+    position: relative;
+    display: inline-block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.center .buttons{
+	margin: 35px 280px;
+}
+.buttons button{
+	height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #e7e4e4;
+	background: rgb(30, 83, 149);
+	outline: none;
+	cursor: pointer;
+	border: 1px solid #5e5b5b;
+	border-radius: 25px;
+	transition: .4s;
+
+}
+
+.buttons .btn2{
+	margin-left: 25px;
+}
+.buttons button:hover{
+	background: rgb(91, 89, 89);
+}
+
+
+
+
+/* ta parakatw einai gia ta mynhmata pou emfanizei to button add discount */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+	text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.modal-message {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 15px;
+	color: #333; /* Darker text color */
+    font-family: Arial, sans-serif;
+}
+
+.modal-content {
+	text-align: left;
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* CSS styles for the like and dislike buttons */
+.like-button {
+    padding: 7px 15px; /* Adjust padding as needed */
+    border: none;
+    background-color: #007bff; /* Blue color for like button */
+    color: #fff; /* White text color */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Add some spacing between buttons */
+}
+
+.dislike-button {
+	padding: 7px 15px; /* Adjust padding as needed */
+    border: none;
+    background-color: #007bff; /* Blue color for like button */
+    color: #fff; /* White text color */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Add some spacing between buttons */
+}
+
+
+.option-button1 {
+	padding: 7px 15px; /* Adjust padding as needed */
+    border: none;
+    background-color: #02a50d; /* Blue color for like button */
+    color: #fff; /* White text color */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Add some spacing between buttons */
+}
+
+/* Style Option 2 button */
+.option-button2 {
+    padding: 7px 15px; /* Adjust padding as needed */
+    border: none;
+    background-color: #ff0000; /* Blue color for like button */
+    color: #fff; /* White text color */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Add some spacing between buttons */
+}
+
+
+.discount-button {
+    background-color: #FF5733;
+    color: #FFFFFF;
+    border: 2px solid #FF5733;
+    padding: 7px;
+}
+
+.details-button{
+    background-color: #FF5733;
+    color: #FFFFFF;
+    border: none;
+    padding: 2px;
+}
+
+
+.disabled-button {
+    background-color: #ccc; /* Gray background color */
+    color: #999; /* Gray text color */
+    cursor: not-allowed; /* Change cursor to not-allowed */
+    /* Add any other styles you want to indicate it's disabled */
+  }
+
+
+
+  select {
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    background-color: #fff; /* White background for dropdowns */
+    border: 1px solid #ff9800; /* Orange border */
+    border-radius: 5px;
+    color: #333; /* Dark gray text color */
+  }
+
+  /* Textarea */
+  textarea {
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    height: 100px;
+    background-color: #fff; /* White background for textarea */
+    border: 1px solid #ff9800; /* Orange border */
+    border-radius: 5px;
+    color: #333; /* Dark gray text color */
+  }
+
+  /* Submit Button */
+  button {
+    padding: 10px 20px;
+    background-color: #28a745; /* Green button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }

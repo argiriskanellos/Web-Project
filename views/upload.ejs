@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Page</title>
+  <!-- Include your CSS and other libraries here -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link href="navbar.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="styleadmin.css">
+  <link rel="stylesheet" href="upload.css">
+
+  
+  
+  <!-- jQuery libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  
+  <script src="/admin_ajax_req.js"></script>
+  <script src="/admin.js"></script>
+ 
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="navbar">
+      <!-- Your navigation content here -->
+      <nav class="navbar">
+        <!--	<img class="logo" src="logo.png">
+          <img src="bg1.jpg">
+            <h1>Hello, <%= name %></h1> -->
+            <a class='hello' style="color:#e7e4e4;"> 		Welcome , <%= name %> </a>
+          <ul>
+            <li><a  href="/">Home</a></li>
+            <li><a  href="/charts">Charts</a></li>
+            <li><a class="active" href="/upload">Upload</a></li>
+            <li><a  href="/leaderboard">LeaderBoard</a></li>
+
+            <li><a href="/logout" class="btn btn-danger">Logout</a></li>
+          <!--	<li><a href="#">Log Out</a></li>  -->
+          </ul>
+        </nav>
+    
+    </nav>
+
+
+    <div class="center">
+		
+  
+
+
+    <!-- Add a button to trigger XML data display -->
+    <div class="center-container">
+      <!-- Add a button to trigger XML data display -->
+
+      <div id="dropArea" class="drop-area">
+        <p>Drag and drop  JSON file for PRICES here or click to select one.</p>
+        <input type="file" id="jsonInput" style="display: none;" accept=".json">
+        <div id="uploadIcon" class="upload-icon">&#10003;</div>
+      </div>
+
+      <input type="file" id="jsonInput" style="display: none;" accept=".json">
+      <button id="Delete" onclick="Delete_prices()">Delete Prices</button>
+
+      <div id="dropArea1" class="drop-area">
+        <p>Drag and drop a JSON file for STORES here or click to select one.</p>
+        <input type="file" id="jsonInput1" style="display: none;" accept=".json">
+        <div id="uploadIcon1" class="upload-icon">&#10003;</div>
+      </div>
+
+      <input type="file" id="jsonInput" style="display: none;" accept=".json">
+      <button id="Delete"onclick="Delete_stores() ">Delete Stores</button>
+
+      <div id="dropArea2" class="drop-area">
+        <p>Drag and drop  JSON file for PRODUCTS here or click to select one.</p>
+        <input type="file" id="jsonInput2" style="display: none;" accept=".json">
+        <div id="uploadIcon2" class="upload-icon">&#10003;</div>
+      </div>
+
+
+
+    <input type="file" id="jsonInput" style="display: none;" accept=".json">
+      <button id="Delete"onclick="Delete_products() ">Delete Products</button>
+     
+
+     
+     
+    </div>
+
+
+
+
+  </div>
+
+
+
+    
+    </div>
+      
+      
+     
+
+
+
+</body>
+</html>
